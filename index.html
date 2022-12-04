@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA DE CAMBIO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h2>Casa de Cambio</h2>
+    <form class="formulario">
+        <p>Seleccione la moneda a cotizar:</p>
+        <div class="botones">
+            <div><input type="radio" name="cambio" id="usd">Dólar</div>
+            <div><input type="radio" name="cambio" id="eur">Euro</div>
+            <div><input type="radio" name="cambio" id="brl">Real Brasileño</div>      
+                
+        </div>
+        <p>Ingrese el monto:</p>
+        <p>(Minimo $1 - Maximo $1.000.000)</p>
+        <input class="action" type="number" id="monto" min="1" max="10000000">
+        <input class="action" type="button" id="cotizador" value="Cotizar" onclick="convertir()">
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>
